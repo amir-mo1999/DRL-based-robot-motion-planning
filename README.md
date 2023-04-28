@@ -45,5 +45,5 @@ Coming soon:
 
 To start training or evaluation, run ```python run.py```. What will be run is determined by a few parameters in the run.py file. They are commented and explained at the top of the file.
 
-### Model 1
+### Model 1 (Amir)
 To test out one of a pretrained model run the following command: ```python run.py configs/tableexperiment_pcr/Model_1_Var_1.yaml --eval```
