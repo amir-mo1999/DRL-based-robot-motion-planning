@@ -47,3 +47,8 @@ To start training or evaluation, run ```python run.py```. What will be run is de
 
 ### Model 1 (Amir)
 To test out one of a pretrained model run the following command: ```python run.py configs/tableexperiment_pcr/Model_1_Var_1.yaml --eval```
+A demo of this model can be seen here: 
+
+https://user-images.githubusercontent.com/104627562/235155347-cc490e9b-b494-441e-96c1-c685fca170d3.mp4
+
+Obstacle in red and end effector target in green
