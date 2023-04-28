@@ -45,10 +45,14 @@ Coming soon:
 
 To start training or evaluation, run ```python run.py```. What will be run is determined by a few parameters in the run.py file. They are commented and explained at the top of the file.
 
+## Pretrained Models
 ### Model 1 (Amir)
-To test out one of a pretrained model run the following command: ```python run.py configs/tableexperiment_pcr/Model_1_Var_1.yaml --eval```
-A demo of this model can be seen here: 
+Generally, this approach makes use of a point cloud sensor to generate a point cloud of the obstacles in the workspace. The point clouds are abstracted as cuboids and the robot skeleton is then projected on these cuboids. The observation space stated in the original paper is extended by the robot skeleton and the mentioned projections. For the reward function we added additional terminal rewards and penalties for reaching the target and for hitting an obstacle. 
+To gain further insight on the model see the “Model_1_Var_1.yaml” file in the configs folder. The file gives information on the modular sensor, world and goal classes that were used to train this model.
+
+To test out this model run the following command: ```python run.py configs/tableexperiment_pcr/Model_1_Var_1.yaml --eval```
+A demo can be seen here: 
 
 https://user-images.githubusercontent.com/104627562/235155347-cc490e9b-b494-441e-96c1-c685fca170d3.mp4
 
-Obstacle in red and end effector target in green
+*Obstacle in red and end effector target in green*
